@@ -6,10 +6,9 @@ export default class LoaderStage extends Phaser.Scene {
         super('Loader');
     }
     preload() {
-        console.log('Loader');
+        this.load.image('imgBG', imgBG);
     }
     create() {
-        console.log('Loader');
         this.scene.start('Preloader');
     }
 }

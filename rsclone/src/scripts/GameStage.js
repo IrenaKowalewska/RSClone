@@ -1,13 +1,14 @@
-import Phaser from 'phaser';;
+import Phaser from 'phaser';
+import GameMap from './GameMap';
 
 export default class GameStage extends Phaser.Scene {
     constructor() {
         super('Game');
     }
     preload() {
-        console.log('Game');
+        this.add.sprite(0, 0, 'imgBG').setOrigin(0);
     }
     create() {
-        console.log('Game');
+        this.map = new GameMap(this);
     }
 }
