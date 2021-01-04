@@ -11,7 +11,7 @@
  "infinite":false,
  "layers":[
         {
-         "data":[226, 226, 226, 226, 226, 226, 164, 226, 226, 163, 163, 163, 163, 163, 163, 163, 163, 163, 163, 164, 164, 164, 164, 164, 164, 164, 164, 164, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 164, 164, 164, 381, 381, 226, 163, 164, 350, 164, 164, 164, 350, 350, 164, 164, 164, 3221225574, 3221225574, 3221225574, 164, 164, 164, 164, 164, 226, 226, 226, 226, 381, 226, 226, 164, 164, 163, 226, 226, 226, 164, 226, 350, 164, 226, 164, 164, 102, 102, 324, 164, 164, 164, 164, 164, 164, 381, 164, 164, 226, 226, 226, 226, 226, 163, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 226, 163, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 164, 163, 164, 164, 164, 164, 164, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 164, 164, 226, 164, 164, 164, 164, 164, 226, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 226, 164, 164, 164, 226, 226, 226, 226, 164, 226, 164, 164, 164, 164, 164, 164, 226, 164, 164, 164, 164, 164, 164, 164, 164, 381, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 164, 163, 164, 164, 164, 164, 164, 164, 195, 350, 164, 133, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 164, 163, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 163, 163, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 324, 257, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 163, 163, 164, 381, 164, 164, 164, 164, 164, 164, 164, 164, 164, 324, 164, 164, 164, 164, 164, 164, 164, 164, 164, 226, 226, 381, 226, 226, 226, 163, 164, 164, 381, 164, 164, 164, 164, 164, 164, 164, 164, 226, 381, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 381, 381, 226, 164, 164, 164, 164, 381, 164, 164, 164, 226, 226, 164, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 226, 226, 381, 381, 381, 381, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 381, 226, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 164, 163, 226, 226, 226, 163, 226, 226, 226, 226, 226, 380, 226, 380, 226, 380, 226, 380, 226, 380, 380, 226, 226, 226, 226, 164, 164, 164, 164, 164],
+         "data":[226, 226, 226, 226, 226, 226, 164, 226, 226, 163, 163, 163, 163, 163, 163, 163, 163, 163, 163, 164, 164, 164, 164, 164, 164, 164, 164, 164, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 164, 164, 164, 381, 381, 226, 164, 164, 350, 164, 164, 164, 350, 350, 164, 164, 164, 3221225574, 3221225574, 3221225574, 164, 164, 164, 164, 164, 226, 226, 226, 226, 381, 226, 226, 164, 164, 226, 226, 226, 226, 164, 226, 350, 164, 226, 164, 164, 102, 102, 324, 164, 164, 164, 164, 164, 164, 381, 164, 164, 226, 226, 226, 226, 226, 163, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 226, 163, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 164, 163, 164, 164, 164, 164, 164, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 164, 164, 226, 164, 164, 164, 164, 164, 226, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 226, 164, 164, 164, 226, 226, 226, 226, 164, 226, 164, 164, 164, 164, 164, 164, 226, 164, 164, 164, 164, 164, 164, 164, 164, 381, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 164, 163, 164, 164, 164, 164, 164, 164, 195, 350, 164, 133, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 164, 163, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 163, 163, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 324, 257, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 163, 163, 164, 381, 164, 164, 164, 164, 164, 164, 164, 164, 164, 324, 164, 164, 164, 164, 164, 164, 164, 164, 164, 226, 226, 381, 226, 226, 226, 163, 164, 164, 381, 164, 164, 164, 164, 164, 164, 164, 164, 226, 381, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 381, 381, 226, 164, 164, 164, 164, 381, 164, 164, 164, 226, 226, 164, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 226, 226, 381, 381, 381, 381, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 381, 226, 226, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 164, 381, 381, 381, 164, 163, 226, 226, 226, 163, 226, 226, 226, 226, 226, 380, 226, 380, 226, 380, 226, 380, 226, 380, 380, 226, 226, 226, 226, 164, 164, 164, 164, 164],
          "height":18,
          "id":1,
          "name":"snow",
@@ -121,7 +121,7 @@
                  "visible":true,
                  "width":120,
                  "x":1574.03,
-                 "y":263.598333333333
+                 "y":263.598
                 }, 
                 {
                  "gid":21,
@@ -192,7 +192,7 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1489.32333333333,
+                 "x":1489.32,
                  "y":885.242
                 }, 
                 {
@@ -204,8 +204,8 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1674.50333333333,
-                 "y":1086.156
+                 "x":1674.5,
+                 "y":1086.16
                 }, 
                 {
                  "gid":21,
@@ -228,8 +228,8 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1671.84333333333,
-                 "y":1148.31333333333
+                 "x":1671.84,
+                 "y":1148.31
                 }, 
                 {
                  "gid":21,
@@ -240,7 +240,7 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1673.74666666667,
+                 "x":1673.75,
                  "y":915.623
                 }, 
                 {
@@ -252,8 +252,8 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1455.09333333333,
-                 "y":1055.06333333333
+                 "x":1455.09,
+                 "y":1055.06
                 }, 
                 {
                  "gid":21,
@@ -300,7 +300,7 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":698.129333333333,
+                 "x":698.129,
                  "y":541.463
                 }, 
                 {
@@ -528,7 +528,7 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1571.92666666667,
+                 "x":1571.93,
                  "y":623.215
                 }, 
                 {
@@ -540,8 +540,8 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1575.98333333333,
-                 "y":504.768666666667
+                 "x":1575.98,
+                 "y":504.769
                 }, 
                 {
                  "gid":21,
@@ -613,7 +613,7 @@
                  "visible":true,
                  "width":120,
                  "x":757.319,
-                 "y":351.369666666667
+                 "y":351.37
                 }, 
                 {
                  "gid":21,
@@ -624,8 +624,8 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":2.42722666666667,
-                 "y":140.303
+                 "x":30.42723,
+                 "y":134.969666666667
                 }, 
                 {
                  "gid":89,
@@ -636,7 +636,7 @@
                  "type":"",
                  "visible":true,
                  "width":107,
-                 "x":435.330666666667,
+                 "x":435.331,
                  "y":255.542
                 }, 
                 {
@@ -673,7 +673,7 @@
                  "visible":true,
                  "width":105,
                  "x":1414.1,
-                 "y":907.833333333333
+                 "y":907.833
                 }, 
                 {
                  "gid":90,
@@ -769,7 +769,7 @@
                  "visible":true,
                  "width":120,
                  "x":1494,
-                 "y":472.666666666667
+                 "y":472.667
                 }, 
                 {
                  "gid":21,
@@ -780,7 +780,7 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1551.33333333333,
+                 "x":1551.33,
                  "y":708
                 }, 
                 {
@@ -792,8 +792,8 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1502.66666666667,
-                 "y":602.666666666667
+                 "x":1502.67,
+                 "y":602.667
                 }, 
                 {
                  "gid":21,
@@ -804,8 +804,8 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1668.66666666667,
-                 "y":630.666666666667
+                 "x":1668.67,
+                 "y":630.667
                 }, 
                 {
                  "gid":21,
@@ -817,7 +817,7 @@
                  "visible":true,
                  "width":120,
                  "x":1490,
-                 "y":745.333333333333
+                 "y":745.333
                 }, 
                 {
                  "gid":21,
@@ -828,8 +828,8 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1670.66666666667,
-                 "y":723.333333333333
+                 "x":1670.67,
+                 "y":723.333
                 }, 
                 {
                  "gid":21,
@@ -840,7 +840,7 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":1589.33333333333,
+                 "x":1589.33,
                  "y":922
                 }, 
                 {
@@ -852,8 +852,8 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":668.666666666667,
-                 "y":835.333333333333
+                 "x":668.667,
+                 "y":835.333
                 }, 
                 {
                  "gid":21,
@@ -888,8 +888,8 @@
                  "type":"",
                  "visible":true,
                  "width":120,
-                 "x":100,
-                 "y":186
+                 "x":101.333333333333,
+                 "y":200
                 }, 
                 {
                  "gid":30,
@@ -924,8 +924,8 @@
                  "type":"",
                  "visible":true,
                  "width":71,
-                 "x":439.166666666667,
-                 "y":199.166666666667
+                 "x":439.167,
+                 "y":199.167
                 }, 
                 {
                  "gid":90,
@@ -937,7 +937,7 @@
                  "visible":true,
                  "width":71,
                  "x":1222.5,
-                 "y":1145.16666666667
+                 "y":1145.17
                 }, 
                 {
                  "gid":90,
@@ -1176,7 +1176,7 @@
                  "type":"",
                  "visible":true,
                  "width":71,
-                 "x":-2.83333333333333,
+                 "x":-2.83333,
                  "y":784.5
                 }, 
                 {
@@ -1189,7 +1189,7 @@
                  "visible":true,
                  "width":107,
                  "x":-1.5,
-                 "y":887.666666666667
+                 "y":887.667
                 }, 
                 {
                  "gid":90,
@@ -1248,7 +1248,7 @@
                  "type":"",
                  "visible":true,
                  "width":71,
-                 "x":1067.16666666667,
+                 "x":1067.17,
                  "y":1150.5
                 }, 
                 {
@@ -1272,7 +1272,7 @@
                  "type":"",
                  "visible":true,
                  "width":71,
-                 "x":833.166666666667,
+                 "x":833.167,
                  "y":1158.5
                 }, 
                 {
@@ -1296,7 +1296,7 @@
                  "type":"",
                  "visible":true,
                  "width":71,
-                 "x":955.833333333333,
+                 "x":955.833,
                  "y":1158.5
                 }, 
                 {
@@ -1309,7 +1309,7 @@
                  "visible":true,
                  "width":71,
                  "x":704.5,
-                 "y":1159.16666666667
+                 "y":1159.17
                 }, 
                 {
                  "gid":90,
@@ -1321,7 +1321,7 @@
                  "visible":true,
                  "width":71,
                  "x":572.5,
-                 "y":1159.16666666667
+                 "y":1159.17
                 }, 
                 {
                  "gid":87,
@@ -1393,7 +1393,7 @@
                  "visible":true,
                  "width":120,
                  "x":1674,
-                 "y":995.333333333333
+                 "y":995.333
                 }, 
                 {
                  "gid":21,
@@ -1417,7 +1417,7 @@
                  "visible":true,
                  "width":120,
                  "x":1481,
-                 "y":1151.33333333333
+                 "y":1151.33
                 }, 
                 {
                  "gid":21,
@@ -1429,19 +1429,7 @@
                  "visible":true,
                  "width":120,
                  "x":1569,
-                 "y":810.333333333333
-                }, 
-                {
-                 "gid":21,
-                 "height":140,
-                 "id":194,
-                 "name":"hexagonTile_03",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":120,
-                 "x":88,
-                 "y":139
+                 "y":810.333
                 }, 
                 {
                  "gid":89,
@@ -1452,8 +1440,8 @@
                  "type":"",
                  "visible":true,
                  "width":105,
-                 "x":1384.16666666667,
-                 "y":1145.66666666667
+                 "x":1384.17,
+                 "y":1145.67
                 }, 
                 {
                  "gid":89,
@@ -1465,7 +1453,7 @@
                  "visible":true,
                  "width":105,
                  "x":1283.5,
-                 "y":1136.33333333333
+                 "y":1136.33
                 }, 
                 {
                  "gid":89,
@@ -1536,7 +1524,7 @@
                  "type":"",
                  "visible":true,
                  "width":71,
-                 "x":303.166666666667,
+                 "x":303.167,
                  "y":1156.5
                 }],
          "opacity":1,
@@ -1596,7 +1584,7 @@
                  "visible":true,
                  "width":64,
                  "x":576.901,
-                 "y":832.062333333333
+                 "y":832.062
                 }, 
                 {
                  "gid":63,
@@ -1643,8 +1631,8 @@
                  "type":"",
                  "visible":true,
                  "width":64,
-                 "x":575.349333333333,
-                 "y":832.328333333333
+                 "x":575.349,
+                 "y":832.328
                 }, 
                 {
                  "gid":2,
@@ -1751,8 +1739,8 @@
                  "type":"",
                  "visible":true,
                  "width":64,
-                 "x":0.666666666666664,
-                 "y":230.666666666667
+                 "x":0.666667,
+                 "y":230.667
                 }, 
                 {
                  "gid":63,
@@ -1768,7 +1756,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -1980,565 +1968,565 @@
          "tiles":[
                 {
                  "id":0,
-                 "image":"objects\/arrow.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/arrow.png",
                  "imageheight":50,
                  "imagewidth":83
                 }, 
                 {
                  "id":1,
-                 "image":"objects\/arrow_white.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/arrow_white.png",
                  "imageheight":50,
                  "imagewidth":83
                 }, 
                 {
                  "id":2,
-                 "image":"objects\/arrow_yellow.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/arrow_yellow.png",
                  "imageheight":50,
                  "imagewidth":83
                 }, 
                 {
                  "id":3,
-                 "image":"objects\/barrel_blue.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/barrel_blue.png",
                  "imageheight":28,
                  "imagewidth":28
                 }, 
                 {
                  "id":4,
-                 "image":"objects\/barrel_blue_down.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/barrel_blue_down.png",
                  "imageheight":24,
                  "imagewidth":35
                 }, 
                 {
                  "id":5,
-                 "image":"objects\/barrel_red.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/barrel_red.png",
                  "imageheight":28,
                  "imagewidth":28
                 }, 
                 {
                  "id":6,
-                 "image":"objects\/barrel_red_down.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/barrel_red_down.png",
                  "imageheight":24,
                  "imagewidth":35
                 }, 
                 {
                  "id":7,
-                 "image":"objects\/barrier_red.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/barrier_red.png",
                  "imageheight":31,
                  "imagewidth":105
                 }, 
                 {
                  "id":8,
-                 "image":"objects\/barrier_red_race.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/barrier_red_race.png",
                  "imageheight":31,
                  "imagewidth":105
                 }, 
                 {
                  "id":9,
-                 "image":"objects\/barrier_white.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/barrier_white.png",
                  "imageheight":31,
                  "imagewidth":105
                 }, 
                 {
                  "id":10,
-                 "image":"objects\/barrier_white_race.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/barrier_white_race.png",
                  "imageheight":31,
                  "imagewidth":105
                 }, 
                 {
                  "id":11,
-                 "image":"objects\/car_black_small_1.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/car_black_small_1.png",
                  "imageheight":70,
                  "imagewidth":40
                 }, 
                 {
                  "id":12,
-                 "image":"objects\/car_blue_1.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/car_blue_1.png",
                  "imageheight":62,
                  "imagewidth":40
                 }, 
                 {
                  "id":13,
-                 "image":"objects\/car_red_1.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/car_red_1.png",
                  "imageheight":62,
                  "imagewidth":40
                 }, 
                 {
                  "id":14,
-                 "image":"objects\/car_red_small_1.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/car_red_small_1.png",
                  "imageheight":70,
                  "imagewidth":40
                 }, 
                 {
                  "id":15,
-                 "image":"objects\/checkpoint.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/checkpoint.png",
                  "imageheight":50,
                  "imagewidth":83
                 }, 
                 {
                  "id":16,
-                 "image":"objects\/cone_down.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/cone_down.png",
                  "imageheight":22,
                  "imagewidth":23
                 }, 
                 {
                  "id":17,
-                 "image":"objects\/cone_straight.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/cone_straight.png",
                  "imageheight":22,
                  "imagewidth":23
                 }, 
                 {
                  "id":18,
-                 "image":"objects\/hexagonTile_01.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_01.png",
                  "imageheight":140,
                  "imagewidth":120
                 }, 
                 {
                  "id":19,
-                 "image":"objects\/hexagonTile_02.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_02.png",
                  "imageheight":141,
                  "imagewidth":120
                 }, 
                 {
                  "id":20,
-                 "image":"objects\/hexagonTile_03.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_03.png",
                  "imageheight":140,
                  "imagewidth":120
                 }, 
                 {
                  "id":21,
-                 "image":"objects\/hexagonTile_04.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_04.png",
                  "imageheight":140,
                  "imagewidth":120
                 }, 
                 {
                  "id":22,
-                 "image":"objects\/hexagonTile_05.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_05.png",
                  "imageheight":140,
                  "imagewidth":120
                 }, 
                 {
                  "id":23,
-                 "image":"objects\/hexagonTile_06.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_06.png",
                  "imageheight":140,
                  "imagewidth":120
                 }, 
                 {
                  "id":24,
-                 "image":"objects\/hexagonTile_07.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_07.png",
                  "imageheight":140,
                  "imagewidth":120
                 }, 
                 {
                  "id":25,
-                 "image":"objects\/hexagonTile_08.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_08.png",
                  "imageheight":140,
                  "imagewidth":120
                 }, 
                 {
                  "id":26,
-                 "image":"objects\/hexagonTile_09.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_09.png",
                  "imageheight":140,
                  "imagewidth":120
                 }, 
                 {
                  "id":27,
-                 "image":"objects\/hexagonTile_10.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_10.png",
                  "imageheight":140,
                  "imagewidth":120
                 }, 
                 {
                  "id":28,
-                 "image":"objects\/hexagonTile_11.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_11.png",
                  "imageheight":140,
                  "imagewidth":120
                 }, 
                 {
                  "id":29,
-                 "image":"objects\/hexagonTile_12.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/hexagonTile_12.png",
                  "imageheight":140,
                  "imagewidth":120
                 }, 
                 {
                  "id":30,
-                 "image":"objects\/light_white.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/light_white.png",
                  "imageheight":118,
                  "imagewidth":49
                 }, 
                 {
                  "id":31,
-                 "image":"objects\/light_yellow.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/light_yellow.png",
                  "imageheight":118,
                  "imagewidth":49
                 }, 
                 {
                  "id":32,
-                 "image":"objects\/lights.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/lights.png",
                  "imageheight":32,
                  "imagewidth":80
                 }, 
                 {
                  "id":33,
-                 "image":"objects\/oil.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/oil.png",
                  "imageheight":48,
                  "imagewidth":55
                 }, 
                 {
                  "id":34,
-                 "image":"objects\/rock1.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/rock1.png",
                  "imageheight":36,
                  "imagewidth":45
                 }, 
                 {
                  "id":35,
-                 "image":"objects\/rock2.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/rock2.png",
                  "imageheight":34,
                  "imagewidth":37
                 }, 
                 {
                  "id":36,
-                 "image":"objects\/rock3.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/rock3.png",
                  "imageheight":34,
                  "imagewidth":44
                 }, 
                 {
                  "id":37,
-                 "image":"objects\/skidmark_long_1.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/skidmark_long_1.png",
                  "imageheight":96,
                  "imagewidth":30
                 }, 
                 {
                  "id":38,
-                 "image":"objects\/skidmark_long_2.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/skidmark_long_2.png",
                  "imageheight":96,
                  "imagewidth":30
                 }, 
                 {
                  "id":39,
-                 "image":"objects\/skidmark_long_3.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/skidmark_long_3.png",
                  "imageheight":96,
                  "imagewidth":38
                 }, 
                 {
                  "id":40,
-                 "image":"objects\/skidmark_short_1.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/skidmark_short_1.png",
                  "imageheight":8,
                  "imagewidth":30
                 }, 
                 {
                  "id":41,
-                 "image":"objects\/skidmark_short_2.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/skidmark_short_2.png",
                  "imageheight":16,
                  "imagewidth":60
                 }, 
                 {
                  "id":42,
-                 "image":"objects\/skidmark_short_3.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/skidmark_short_3.png",
                  "imageheight":16,
                  "imagewidth":76
                 }, 
                 {
                  "id":43,
-                 "image":"objects\/tent_blue.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tent_blue.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":44,
-                 "image":"objects\/tent_blue_large.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tent_blue_large.png",
                  "imageheight":128,
                  "imagewidth":128
                 }, 
                 {
                  "id":45,
-                 "image":"objects\/tent_red.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tent_red.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":46,
-                 "image":"objects\/tent_red_large.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tent_red_large.png",
                  "imageheight":128,
                  "imagewidth":128
                 }, 
                 {
                  "id":47,
-                 "image":"objects\/tires_red.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tires_red.png",
                  "imageheight":28,
                  "imagewidth":28
                 }, 
                 {
                  "id":48,
-                 "image":"objects\/tires_red_alt.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tires_red_alt.png",
                  "imageheight":28,
                  "imagewidth":28
                 }, 
                 {
                  "id":49,
-                 "image":"objects\/tires_white.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tires_white.png",
                  "imageheight":28,
                  "imagewidth":28
                 }, 
                 {
                  "id":50,
-                 "image":"objects\/tires_white_alt.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tires_white_alt.png",
                  "imageheight":28,
                  "imagewidth":28
                 }, 
                 {
                  "id":51,
-                 "image":"objects\/topdownTile_01.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_01.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":52,
-                 "image":"objects\/topdownTile_02.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_02.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":53,
-                 "image":"objects\/topdownTile_03.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_03.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":54,
-                 "image":"objects\/topdownTile_04.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_04.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":55,
-                 "image":"objects\/topdownTile_05.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_05.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":56,
-                 "image":"objects\/topdownTile_06.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_06.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":57,
-                 "image":"objects\/topdownTile_07.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_07.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":58,
-                 "image":"objects\/topdownTile_08.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_08.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":59,
-                 "image":"objects\/topdownTile_09.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_09.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":60,
-                 "image":"objects\/topdownTile_10.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_10.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":61,
-                 "image":"objects\/topdownTile_11.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_11.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":62,
-                 "image":"objects\/topdownTile_12.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_12.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":63,
-                 "image":"objects\/topdownTile_13.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_13.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":64,
-                 "image":"objects\/topdownTile_14.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_14.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":65,
-                 "image":"objects\/topdownTile_15.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_15.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":66,
-                 "image":"objects\/topdownTile_16.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_16.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":67,
-                 "image":"objects\/topdownTile_17.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_17.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":68,
-                 "image":"objects\/topdownTile_18.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_18.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":69,
-                 "image":"objects\/topdownTile_19.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_19.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":70,
-                 "image":"objects\/topdownTile_20.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_20.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":71,
-                 "image":"objects\/topdownTile_21.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_21.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":72,
-                 "image":"objects\/topdownTile_22.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_22.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":73,
-                 "image":"objects\/topdownTile_23.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_23.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":74,
-                 "image":"objects\/topdownTile_24.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_24.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":75,
-                 "image":"objects\/topdownTile_25.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_25.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":76,
-                 "image":"objects\/topdownTile_26.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_26.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":77,
-                 "image":"objects\/topdownTile_27.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_27.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":78,
-                 "image":"objects\/topdownTile_28.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_28.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":79,
-                 "image":"objects\/topdownTile_29.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_29.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":80,
-                 "image":"objects\/topdownTile_30.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_30.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":81,
-                 "image":"objects\/topdownTile_31.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_31.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":82,
-                 "image":"objects\/topdownTile_32.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_32.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":83,
-                 "image":"objects\/topdownTile_33.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_33.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":84,
-                 "image":"objects\/topdownTile_34.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_34.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":85,
-                 "image":"objects\/topdownTile_35.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_35.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":86,
-                 "image":"objects\/topdownTile_39.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_39.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":87,
-                 "image":"objects\/topdownTile_41.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/topdownTile_41.png",
                  "imageheight":64,
                  "imagewidth":64
                 }, 
                 {
                  "id":88,
-                 "image":"objects\/tree_large.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tree_large.png",
                  "imageheight":106,
                  "imagewidth":107
                 }, 
                 {
                  "id":89,
-                 "image":"objects\/tree_small.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tree_small.png",
                  "imageheight":71,
                  "imagewidth":71
                 }, 
                 {
                  "id":90,
-                 "image":"objects\/tribune_empty.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tribune_empty.png",
                  "imageheight":112,
                  "imagewidth":224
                 }, 
                 {
                  "id":91,
-                 "image":"objects\/tribune_full.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tribune_full.png",
                  "imageheight":112,
                  "imagewidth":224
                 }, 
                 {
                  "id":92,
-                 "image":"objects\/tribune_overhang_red.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tribune_overhang_red.png",
                  "imageheight":72,
                  "imagewidth":224
                 }, 
                 {
                  "id":93,
-                 "image":"objects\/tribune_overhang_striped.png",
+                 "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/objects\/tribune_overhang_striped.png",
                  "imageheight":72,
                  "imagewidth":224
                 }],
@@ -2547,7 +2535,7 @@
         {
          "columns":31,
          "firstgid":95,
-         "image":"tileset.png",
+         "image":"..\/..\/..\/..\/..\/RACING\/phaser3-project-template\/src\/assets\/tileset.png",
          "imageheight":1024,
          "imagewidth":2048,
          "margin":0,
