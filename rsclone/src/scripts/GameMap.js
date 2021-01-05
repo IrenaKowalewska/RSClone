@@ -26,4 +26,10 @@ export default class GameMap {
         })
     }
 
+    getPlayerPosition() {
+        return this.tileMap.findObject('player', position => {
+            return position.name ==='player';
+        });
+    }
+
 }
