@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import GameMap from './GameMap';
+import Player from './Player';
 
 export default class GameStage extends Phaser.Scene {
     constructor() {
@@ -10,5 +11,6 @@ export default class GameStage extends Phaser.Scene {
     }
     create() {
         this.map = new GameMap(this);
+        this.player = new Player(this, this.map);
     }
 }
