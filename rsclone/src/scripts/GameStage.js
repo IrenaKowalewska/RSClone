@@ -12,5 +12,8 @@ export default class GameStage extends Phaser.Scene {
     create() {
         this.map = new GameMap(this);
         this.player = new Player(this, this.map);
+
+        this.cameras.main.setBounds(0, 0, this.map.tileMap.widthInPixels, this.map.tileMap.heightInPixels);
+        this.cameras.main.startFollow(this.player.car);
     }
 }
