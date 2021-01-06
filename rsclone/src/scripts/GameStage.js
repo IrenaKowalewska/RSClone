@@ -6,6 +6,9 @@ export default class GameStage extends Phaser.Scene {
     constructor() {
         super('Game');
     }
+    init() {
+        this.cursors = this.input.keyboard.createCursorKeys();
+    }
     preload() {
         this.add.sprite(0, 0, 'imgBG').setOrigin(0);
     }
@@ -15,5 +18,8 @@ export default class GameStage extends Phaser.Scene {
 
         this.cameras.main.setBounds(0, 0, this.map.tileMap.widthInPixels, this.map.tileMap.heightInPixels);
         this.cameras.main.startFollow(this.player.car);
+    }
+    update() {
+        this.player.move();
     }
 }
