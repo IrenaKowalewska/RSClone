@@ -20,8 +20,7 @@ export default class GameMap {
     }
     addObjects() {
         this.tileMap.findObject('collisions', item => {
-            const objectSprite = this.scene.matter.add.sprite(item.x, item.y, 'gameObjects', item.name);
-            objectSprite.setOrigin(0, 1);
+            const objectSprite = this.scene.matter.add.sprite(item.x + item.width / 2, item.y - item.height / 2, 'gameObjects', item.name);
             objectSprite.setStatic(true);
         })
     }
