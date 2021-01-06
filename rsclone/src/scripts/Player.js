@@ -1,4 +1,5 @@
 const DIRECTIONS = Object.freeze({BACK: -1, NONE: 0, FORWARD: 1});
+const TURNS = Object.freeze({LEFT: -1, NONE: 0, RIGHT: 1});
 const SPEED = 10;
 export default class Player {
     constructor(scene, map) {
@@ -6,6 +7,7 @@ export default class Player {
         this.map = map;
         const position = this.map.getPlayerPosition();
         this.car = this.scene.matter.add.sprite(position.x, position.y, 'gameObjects', 'car_black_small_1');
+        this.car.setFixedRotation(true);
     }
 
     get directionCar() {
@@ -24,6 +26,22 @@ export default class Player {
         return this.directionCar * SPEED;
     }
 
+    get turnCar() {
+        let turn = TURNS.NONE;
+
+        if (this.scene.cursors.left.isDown) {
+            turn = TURNS.LEFT;
+        } else if (this.scene.cursors.right.isDown) {
+            turn = TURNS.RIGHT;
+        }
+
+        return turn;
+    }
+
+    get angle () {
+        return this.car.angle + this.turnCar * SPEED / 3;
+    }
+
     getSpeedFromAngle() {
         const vector = new Phaser.Math.Vector2();
         return vector.setToPolar(this.car.rotation - Math.PI/2, this.speed);
@@ -31,6 +49,7 @@ export default class Player {
     }
 
     move() {
+        this.car.setAngle(this.angle);
         const speed = this.getSpeedFromAngle();
         this.car.setVelocity(speed.x, speed.y);
     }
