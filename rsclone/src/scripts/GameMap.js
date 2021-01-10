@@ -1,3 +1,9 @@
+const SNOW_FRICTION = 0.2;
+const LAYERS_FRICTION = {
+    road: 1,
+    sand: 0.5,
+    ice: 0.3
+}
 export default class GameMap {
     constructor(scene) {
         this.scene = scene;
@@ -30,5 +36,13 @@ export default class GameMap {
             return position.name ==='player';
         });
     }
-
+    getLayerFriction(car) {
+        for (let layerRoad in LAYERS_FRICTION) {
+            let layer = this.tileMap.getTileAtWorldXY(car.x, car.y, false, this.scene.cameras.main, layerRoad);
+            if(layer) {
+                return LAYERS_FRICTION[layerRoad];
+            }
+        }
+        return SNOW_FRICTION;
+    }
 }

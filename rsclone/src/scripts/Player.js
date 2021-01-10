@@ -26,9 +26,10 @@ export default class Player {
 
     get speed() {
         const velocity = Math.abs(this._speed);
-        if(this.directionCar && velocity < SPEED) {
+        const gameSpeed = this.getGameSpeedCar();
+        if(this.directionCar && velocity < gameSpeed) {
             this._speed += ACCELERATION * Math.sign(this.directionCar);
-        } else if (!this.directionCar && velocity > 0) {
+        } else if ((!this.directionCar && velocity > 0) || (this.directionCar && velocity > gameSpeed)) {
             this._speed -= ACCELERATION * Math.sign(this._speed);
         }
         return this._speed;
@@ -54,6 +55,10 @@ export default class Player {
         const vector = new Phaser.Math.Vector2();
         return vector.setToPolar(this.car.rotation - Math.PI/2, this.speed);
 
+    }
+
+    getGameSpeedCar() {
+        return SPEED * this.map.getLayerFriction(this.car);
     }
 
     move() {
