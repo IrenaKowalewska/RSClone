@@ -2,6 +2,7 @@ const DIRECTIONS = Object.freeze({BACK: -1, NONE: 0, FORWARD: 1});
 const TURNS = Object.freeze({LEFT: -1, NONE: 0, RIGHT: 1});
 const SPEED = 10;
 const ACCELERATION = 0.5;
+const SLIP_ANGLE = 4;
 export default class Player {
     constructor(scene, map) {
         this.scene = scene;
@@ -61,12 +62,16 @@ export default class Player {
         return SPEED * this.map.getLayerFriction(this.car);
     }
 
+    slip() {
+        this.car.angle += SLIP_ANGLE;
+    }
+
     move() {
         this.car.setAngle(this.angle);
         const speed = this.getSpeedFromAngle();
         this.car.setVelocity(speed.x, speed.y);
-        console.log(this.car.y)
         const playerHalfWidth = this.car.width / 2;
+        const playerHalfHeigh = this.car.height / 2;
         if (this.car.x < 20) {
             this.car.x = playerHalfWidth;
         } 
@@ -74,10 +79,10 @@ export default class Player {
             this.car.x = 1700 - playerHalfWidth;
         }
         if (this.car.y < 40) {
-            this.car.y = this.car.height / 2;
+            this.car.y = playerHalfHeigh;
         } 
-        if (this.car.y > 1160 - this.car.height / 2) {
-            this.car.y = 1160 - this.car.height / 2;
+        if (this.car.y > 1160 - playerHalfHeigh) {
+            this.car.y = 1160 - playerHalfHeigh;
         }
     }
 }
