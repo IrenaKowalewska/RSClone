@@ -65,5 +65,19 @@ export default class Player {
         this.car.setAngle(this.angle);
         const speed = this.getSpeedFromAngle();
         this.car.setVelocity(speed.x, speed.y);
+        console.log(this.car.y)
+        const playerHalfWidth = this.car.width / 2;
+        if (this.car.x < 20) {
+            this.car.x = playerHalfWidth;
+        } 
+        if (this.car.x > 1700 - playerHalfWidth) {
+            this.car.x = 1700 - playerHalfWidth;
+        }
+        if (this.car.y < 40) {
+            this.car.y = this.car.height / 2;
+        } 
+        if (this.car.y > 1160 - this.car.height / 2) {
+            this.car.y = 1160 - this.car.height / 2;
+        }
     }
 }
