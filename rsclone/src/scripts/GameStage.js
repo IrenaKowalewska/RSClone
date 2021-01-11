@@ -18,6 +18,12 @@ export default class GameStage extends Phaser.Scene {
 
         this.cameras.main.setBounds(0, 0, this.map.tileMap.widthInPixels, this.map.tileMap.heightInPixels);
         this.cameras.main.startFollow(this.player.car);
+
+        this.matter.world.on('collisionactive', (event, oil, player) => {
+            if (player.gameObject === this.player.car && oil.gameObject.frame.name === 'oil') {
+                this.player.slip();
+            }
+        })
     }
     update() {
         this.player.move();

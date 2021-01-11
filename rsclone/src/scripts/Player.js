@@ -2,6 +2,7 @@ const DIRECTIONS = Object.freeze({BACK: -1, NONE: 0, FORWARD: 1});
 const TURNS = Object.freeze({LEFT: -1, NONE: 0, RIGHT: 1});
 const SPEED = 10;
 const ACCELERATION = 0.5;
+const SLIP_ANGLE = 4;
 export default class Player {
     constructor(scene, map) {
         this.scene = scene;
@@ -26,9 +27,10 @@ export default class Player {
 
     get speed() {
         const velocity = Math.abs(this._speed);
-        if(this.directionCar && velocity < SPEED) {
+        const gameSpeed = this.getGameSpeedCar();
+        if(this.directionCar && velocity < gameSpeed) {
             this._speed += ACCELERATION * Math.sign(this.directionCar);
-        } else if (!this.directionCar && velocity > 0) {
+        } else if ((!this.directionCar && velocity > 0) || (this.directionCar && velocity > gameSpeed)) {
             this._speed -= ACCELERATION * Math.sign(this._speed);
         }
         return this._speed;
@@ -56,9 +58,31 @@ export default class Player {
 
     }
 
+    getGameSpeedCar() {
+        return SPEED * this.map.getLayerFriction(this.car);
+    }
+
+    slip() {
+        this.car.angle += SLIP_ANGLE;
+    }
+
     move() {
         this.car.setAngle(this.angle);
         const speed = this.getSpeedFromAngle();
         this.car.setVelocity(speed.x, speed.y);
+        const playerHalfWidth = this.car.width / 2;
+        const playerHalfHeigh = this.car.height / 2;
+        if (this.car.x < 20) {
+            this.car.x = playerHalfWidth;
+        } 
+        if (this.car.x > 1700 - playerHalfWidth) {
+            this.car.x = 1700 - playerHalfWidth;
+        }
+        if (this.car.y < 40) {
+            this.car.y = playerHalfHeigh;
+        } 
+        if (this.car.y > 1160 - playerHalfHeigh) {
+            this.car.y = 1160 - playerHalfHeigh;
+        }
     }
 }

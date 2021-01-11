@@ -1,3 +1,9 @@
+const SNOW_FRICTION = 0.2;
+const LAYERS_FRICTION = {
+    road: 1,
+    sand: 0.5,
+    ice: 0.3
+}
 export default class GameMap {
     constructor(scene) {
         this.scene = scene;
@@ -11,6 +17,7 @@ export default class GameMap {
     create() {
         this.addLayers();
         this.addObjects();
+        this.addOils();
     }
     addLayers() {
         this.tileMap.createStaticLayer('snow', this.tileSet);
@@ -22,13 +29,28 @@ export default class GameMap {
         this.tileMap.findObject('collisions', item => {
             const objectSprite = this.scene.matter.add.sprite(item.x + item.width / 2, item.y - item.height / 2, 'gameObjects', item.name);
             objectSprite.setStatic(true);
-        })
+        });
     }
 
+    addOils() {
+        this.tileMap.findObject('oil', item => {
+            const objectSprite = this.scene.matter.add.sprite(item.x + item.width / 2, item.y - item.height / 2, 'gameObjects', item.name);
+            objectSprite.setStatic(true);
+            objectSprite.setSensor(true);
+        });
+    }
     getPlayerPosition() {
         return this.tileMap.findObject('player', position => {
             return position.name ==='player';
         });
     }
-
+    getLayerFriction(car) {
+        for (let layerRoad in LAYERS_FRICTION) {
+            let layer = this.tileMap.getTileAtWorldXY(car.x, car.y, false, this.scene.cameras.main, layerRoad);
+            if(layer) {
+                return LAYERS_FRICTION[layerRoad];
+            }
+        }
+        return SNOW_FRICTION;
+    }
 }
