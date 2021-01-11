@@ -11,6 +11,7 @@ export default class GameStage extends Phaser.Scene {
     }
     preload() {
         this.add.sprite(0, 0, 'imgBG').setOrigin(0);
+        this.load.audio('theme', '../../src/assets/sounds/theme.mp3');
     }
     create() {
         this.map = new GameMap(this);
@@ -24,6 +25,10 @@ export default class GameStage extends Phaser.Scene {
                 this.player.slip();
             }
         })
+        this.theme = this.sound.add('theme');
+        this.theme.play({
+            volume: 0.1
+        });
     }
     update() {
         this.player.move();
