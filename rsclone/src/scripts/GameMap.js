@@ -19,7 +19,8 @@ export default class GameMap {
         this.addObjects();
         this.addOils();
         this.addArrows();
-        this.addSnowRoad()
+        this.addSnowRoad();
+        this.addCheckpoints();
     }
     addLayers() {
         this.tileMap.createStaticLayer('snow', this.tileSet);
@@ -31,6 +32,15 @@ export default class GameMap {
         this.tileMap.findObject('collisions', item => {
             const objectSprite = this.scene.matter.add.sprite(item.x + item.width / 2, item.y - item.height / 2, 'gameObjects', item.name);
             objectSprite.setStatic(true);
+        });
+    }
+    
+    addCheckpoints() {
+        this.checkpoints = [];
+        this.tileMap.findObject('checkpoints', checkpoint => {
+            let recttangle = new Phaser.Geom.Rectangle(checkpoint.x, checkpoint.y, checkpoint.width, checkpoint.height);
+            rectangle.index = checkpoint.properties.find(property => property.name === 'value').value;
+            this.checkpoints.push(rectangle);
         });
     }
 
@@ -68,5 +78,10 @@ export default class GameMap {
             }
         }
         return SNOW_FRICTION;
+    }
+
+    getCheckpointMap(car) {
+        const checkpoint = this.checkpoints.find(checkpoint => checkpoint.contains(car.a, car.y));
+        return checkpoint ? checkpoint.index : false;
     }
 }
