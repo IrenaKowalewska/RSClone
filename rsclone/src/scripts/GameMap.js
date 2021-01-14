@@ -23,10 +23,10 @@ export default class GameMap {
         this.addCheckpoints();
     }
     addLayers() {
-        this.tileMap.createStaticLayer('snow', this.tileSet);
-        this.tileMap.createStaticLayer('road', this.tileSet);
-        this.tileMap.createStaticLayer('sand', this.tileSet);
-        this.tileMap.createStaticLayer('ice', this.tileSet);
+        this.tileMap.createLayer('snow', this.tileSet);
+        this.tileMap.createLayer('road', this.tileSet);
+        this.tileMap.createLayer('sand', this.tileSet);
+        this.tileMap.createLayer('ice', this.tileSet);
     }
     addObjects() {
         this.tileMap.findObject('collisions', item => {
