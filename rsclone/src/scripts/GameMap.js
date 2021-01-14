@@ -38,7 +38,7 @@ export default class GameMap {
     addCheckpoints() {
         this.checkpoints = [];
         this.tileMap.findObject('checkpoints', checkpoint => {
-            let recttangle = new Phaser.Geom.Rectangle(checkpoint.x, checkpoint.y, checkpoint.width, checkpoint.height);
+            let rectangle = new Phaser.Geom.Rectangle(checkpoint.x, checkpoint.y, checkpoint.width, checkpoint.height);
             rectangle.index = checkpoint.properties.find(property => property.name === 'value').value;
             this.checkpoints.push(rectangle);
         });
@@ -81,7 +81,7 @@ export default class GameMap {
     }
 
     getCheckpointMap(car) {
-        const checkpoint = this.checkpoints.find(checkpoint => checkpoint.contains(car.a, car.y));
-        return checkpoint ? checkpoint.index : false;
+        const checkpoint = this.checkpoints.find(checkpoint => checkpoint.contains(car.x, car.y));
+        return checkpoint ? +(checkpoint.index) : false;
     }
 }

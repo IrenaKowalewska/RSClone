@@ -94,19 +94,20 @@ export default class Player {
     }
 
     checkPosition() {
-        const checkpoint = this.getCheckpoint(this.car);
+        const checkpoint = this.map.getCheckpointMap(this.car);
         if (checkpoint) {
             this.validCheckpoint(checkpoint);
         }
     }
 
-    validCheckpoint() {
+    validCheckpoint(checkpoint) {
         if (checkpoint === 1 && this.checkpoint === this.map.checkpoints.lenght) {
             this.checkpoint = 1;
             ++this.cycles;
-            this.car.emit('cycle', this.cycle);
+            this.car.emit('cycle', this.cycles);
         } else if (this.checkpoint === this.checkpoint + 1) {
             ++this.checkpoint;
+           
         }
     }
 }

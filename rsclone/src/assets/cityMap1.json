@@ -28,6 +28,12 @@
          "id":2,
          "name":"road",
          "opacity":1,
+         "properties":[
+              {
+               "name":"checkpoint",
+               "type":"string",
+               "value":"1"
+              }],
          "type":"tilelayer",
          "visible":true,
          "width":28,
@@ -40,6 +46,12 @@
          "id":4,
          "name":"sand",
          "opacity":1,
+         "properties":[
+              {
+               "name":"checkpoint",
+               "type":"string",
+               "value":"1"
+              }],
          "type":"tilelayer",
          "visible":true,
          "width":28,
@@ -52,6 +64,12 @@
          "id":3,
          "name":"ice",
          "opacity":1,
+         "properties":[
+              {
+               "name":"checkpoint",
+               "type":"string",
+               "value":"1"
+              }],
          "type":"tilelayer",
          "visible":true,
          "width":28,
