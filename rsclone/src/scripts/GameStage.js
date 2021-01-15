@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import GameMap from './GameMap';
 import Player from './Player';
+import Stats from './Stats';
 
 const CYCLES = 3;
 
@@ -18,6 +19,7 @@ export default class GameStage extends Phaser.Scene {
     create() {
         this.map = new GameMap(this);
         this.player = new Player(this, this.map);
+        this.stats = new Stats(this, CYCLES);
 
         this.cameras.main.setBounds(0, 0, this.map.tileMap.widthInPixels, this.map.tileMap.heightInPixels);
         this.cameras.main.startFollow(this.player.car);
@@ -34,12 +36,14 @@ export default class GameStage extends Phaser.Scene {
         //     volume: 0.1
         // });
     }
-    onCycleComplete(cycle) {
-        if (cycle > CYCLES) {
+    onCycleComplete() {
+        this.stats.onCycleComplete();
+        if (this.stats.complete) {
             this.scene.restart();
         }
     }
-    update() {
+    update(time, deltaTime) {
+        this.stats.update(deltaTime)
         this.player.move();
     }
 }
