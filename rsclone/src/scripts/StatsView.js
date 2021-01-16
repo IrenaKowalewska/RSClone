@@ -6,11 +6,11 @@ export default class StatsView {
     }
 
     create() {
-        const style = {font: '24px Arial', fill: '#fff'};
+        const style = {font: '24px Arial', fill: '#000'};
         this.cycles = this.scene.add.text(10, 10, 'Cycles: 0/0', style).setScrollFactor(0);
-        this.time = this.scene.add.text(10, 50, 'Time: 0/0', style).setScrollFactor(0);
-        this.timeCycle = this.scene.add.text(10, 90, 'Time cycle: 0/0', style).setScrollFactor(0);
-        this.timeBestCycle = this.scene.add.text(10, 130, 'Best Cycle: 0/0', style).setScrollFactor(0);
+        this.time = this.scene.add.text(10, 40, 'Time: 0/0', style).setScrollFactor(0);
+        this.timeCycle = this.scene.add.text(10, 70, 'Time cycle: 0/0', style).setScrollFactor(0);
+        this.timeBestCycle = this.scene.add.text(10, 100, 'Best Cycle: 0/0', style).setScrollFactor(0);
     }
 
     render() {
