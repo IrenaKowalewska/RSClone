@@ -14,7 +14,6 @@ export default class Stats {
     }
 
     onCycleComplete() {
-        comsole.log('complete');
         ++this.cycle;
 
         if (this.timeBestCycle === 0 || this.timeCycle < this.timeBestCycle) {
@@ -30,7 +29,6 @@ export default class Stats {
             const time = deltaTime / 1000;
             this.time += time;
             this.timeCycle += time;
-            console.log(this);
         }
     }
 }

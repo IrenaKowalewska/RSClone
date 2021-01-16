@@ -96,12 +96,11 @@ export default class Player {
     }
 
     validCheckpoint(checkpoint) {
-        if (checkpoint === 1 && this.checkpoint === this.map.checkpoints.lenght) {
+        if (checkpoint === 1 && this.checkpoint === this.map.checkpoints.length) {
             this.checkpoint = 1;
             this.car.emit('cycle');
-        } else if (this.checkpoint === this.checkpoint + 1) {
+        } else if (checkpoint === this.checkpoint + 1) {
             ++this.checkpoint;
-           
         }
     }
 }
