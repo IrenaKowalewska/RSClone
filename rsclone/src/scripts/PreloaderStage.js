@@ -15,6 +15,6 @@ export default class PreloaderStage extends Phaser.Scene {
         this.load.atlas('gameObjects', objectsImg, objectsJson);
     }
     create() {
-        this.scene.start('Game');
+        this.scene.start('Start');
     }
 }

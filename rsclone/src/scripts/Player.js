@@ -14,7 +14,7 @@ export default class Player {
         this.checkpoint = 0;
         this.cycles = 0;
     }
-
+    
     get cycle() {
         return this.cycles + 1;
     }
@@ -70,6 +70,9 @@ export default class Player {
 
     slip() {
         this.car.angle += SLIP_ANGLE;
+        this.scene.sound.add('slip').play({
+                volume: 0.3
+            })
     }
 
     move() {
@@ -107,7 +110,6 @@ export default class Player {
             this.car.emit('cycle', this.cycles);
         } else if (this.checkpoint === this.checkpoint + 1) {
             ++this.checkpoint;
-           
         }
     }
 }
