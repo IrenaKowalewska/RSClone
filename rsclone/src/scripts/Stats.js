@@ -2,7 +2,7 @@ export default class Stats {
     constructor(scene, cycles) {
         this.scene = scene;
         this.cycles = cycles;
-        this.cycle = 0;
+        this.cycle = 1;
         this.time = 0;
         this.timeCycle = 0;
         this.timeBestCycle = 0;
