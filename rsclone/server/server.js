@@ -2,9 +2,9 @@
 const http = require('http');
 const path = require('path');
 const express = require('express');
-const { Http2ServerRequest } = require('http2');
+// const { Http2ServerRequest } = require('http2');
 const socketIO = require('socket.io');
-const { Socket } = require('dgram');
+// const { Socket } = require('dgram');
 
 //создаем сервер
 const distPath = './../dist'
@@ -24,5 +24,6 @@ server.listen(PORT,() => {
 
 const io = socketIO(server);
 io.on('connection',(socket)=>{
+    socket.emit('gameStart')
     console.log(`Подключился новый игрок ${socket.id}`)
 })
