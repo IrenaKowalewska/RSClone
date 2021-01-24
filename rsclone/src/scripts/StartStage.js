@@ -1,3 +1,5 @@
+import Client from "./ioClient";
+
 export default class StartStage extends Phaser.Scene {
     constructor() {
         super('Start');
@@ -60,6 +62,9 @@ export default class StartStage extends Phaser.Scene {
         });
     }
     requestGame() {
+        this.client = new Client();
+        this.client.init();
+        this.client.on('game',this.startGame,this)
         
     }
 }
