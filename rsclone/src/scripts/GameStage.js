@@ -3,6 +3,7 @@ import GameMap from './GameMap';
 import Player from './Player';
 import Stats from './Stats';
 import StatsView from './StatsView';
+import StatsPopup from './StatsPopup';
 
 const CYCLES = 3;
 
@@ -36,7 +37,7 @@ export default class GameStage extends Phaser.Scene {
     onCycleComplete() {
         this.stats.onCycleComplete();
         if (this.stats.complete) {
-            this.scene.restart();
+            this.statsPopup = new StatsPopup(this, this.stats);
         }
     }
     update(time, deltaTime) {
