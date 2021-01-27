@@ -4,11 +4,11 @@ const SPEED = 10;
 const ACCELERATION = 0.5;
 const SLIP_ANGLE = 4;
 export default class Player {
-    constructor(scene, map) {
+    constructor(scene, map, config) {
         this.scene = scene;
         this.map = map;
-        const position = this.map.getPlayerPosition();
-        this.car = this.scene.matter.add.sprite(position.x, position.y, 'gameObjects', 'car_black_small_1');
+        const position = this.map.getPlayerPosition(config.position);
+        this.car = this.scene.matter.add.sprite(position.x, position.y, 'gameObjects', config.sprite);
         this.car.setFixedRotation(true);
         this._speed = 0;
         this.checkpoint = 0;

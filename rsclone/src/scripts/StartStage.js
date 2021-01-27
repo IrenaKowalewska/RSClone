@@ -56,7 +56,7 @@ export default class StartStage extends Phaser.Scene {
         this.buttonTwoPlayers.on('pointerdown', this.requestGame, this);
     }
     startGame() {
-        this.scene.start('Game');
+        this.scene.start('Game',{client: this.client});
         this.theme.play({
             volume: 0.1
         });
