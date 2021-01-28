@@ -10,7 +10,9 @@ const CYCLES = 3;
 export default class GameStage extends Phaser.Scene {
     constructor() {
         super('Game');
+        this.level = 1;
     }
+
     init() {
         this.cursors = this.input.keyboard.createCursorKeys();
     }
@@ -18,7 +20,7 @@ export default class GameStage extends Phaser.Scene {
         this.add.sprite(0, 0, 'imgBG').setOrigin(0);
     }
     create() {
-        this.map = new GameMap(this);
+        this.map = new GameMap(this, this.level);
         this.player = new Player(this, this.map);
         this.stats = new Stats(this, CYCLES);
         this.statsView = new StatsView(this, this.stats);
@@ -32,12 +34,19 @@ export default class GameStage extends Phaser.Scene {
             if (player.gameObject === this.player.car && oil.gameObject.frame.name === 'oil') {
                 this.player.slip();
             }
+            // if (player.gameObject === this.player.car && oil.gameObject.frame.name === 'topdownTile_41') {
+            //     this.sound.add('bom').play({
+            //         volume: 0.1
+            //     });
+                
+            // }
         })
     }
     onCycleComplete() {
         this.stats.onCycleComplete();
         if (this.stats.complete) {
-            this.statsPopup = new StatsPopup(this, this.stats);
+            this.level++;
+            this.statsPopup = new StatsPopup(this, this.stats, this.level);
         }
     }
     update(time, deltaTime) {

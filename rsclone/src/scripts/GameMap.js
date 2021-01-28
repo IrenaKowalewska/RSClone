@@ -5,13 +5,22 @@ const LAYERS_FRICTION = {
     ice: 0.3
 }
 export default class GameMap {
-    constructor(scene) {
+    constructor(scene, level = 1) {
+        this.level = level;
         this.scene = scene;
         this.init();
         this.create();
     }
     init() {
-        this.tileMap = this.scene.make.tilemap({key: 'tileMap'});
+        if (this.level === 3) {
+            this.level = 1;
+        }
+        if(this.level === 1) {
+            this.tileMap = this.scene.make.tilemap({key: 'tileMap'});
+        }
+        if(this.level === 2) {
+            this.tileMap = this.scene.make.tilemap({key: 'tileMap2'});
+        }
         this.tileSet =  this.tileMap.addTilesetImage('tileset', 'tileSet', 64, 64, 0, 1);
     }
     create() {

@@ -10,6 +10,7 @@ export default class StartStage extends Phaser.Scene {
         this.addGameTitle();
         this.addButtons();
         this.addEvents();
+        this.level = 1;
     }
     addMusic() {
         this.theme = this.sound.add('theme');

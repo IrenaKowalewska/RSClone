@@ -65,8 +65,9 @@ export default class Player {
 
     slip() {
         this.car.angle += SLIP_ANGLE;
-        this.scene.sound.add('slip').play({
-                volume: 0.3
+        this.scene.slip = this.scene.sound.add('slip');
+            this.scene.slip.play({
+                volume: 0.2,
             })
     }
 
