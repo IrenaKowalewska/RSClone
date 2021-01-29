@@ -12,9 +12,6 @@ export default class GameMap {
         this.create();
     }
     init() {
-        if (this.level === 3) {
-            this.level = 1;
-        }
         if(this.level === 1) {
             this.tileMap = this.scene.make.tilemap({key: 'tileMap'});
         }
@@ -30,6 +27,7 @@ export default class GameMap {
         this.addArrows();
         this.addSnowRoad();
         this.addCheckpoints();
+
     }
     addLayers() {
         this.tileMap.createLayer('snow', this.tileSet);

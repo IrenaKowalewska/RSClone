@@ -51,7 +51,7 @@ export default class StatsPopup {
         
         this.menu = this.scene.add.text(this.scene.cameras.main.centerX, 
             this.scene.cameras.main.centerY + 280,
-            `GO TO MENU`,
+            `MENU`,
             style)
             .setStroke('#000000', 10)
             .setOrigin(0.5)

@@ -10,16 +10,28 @@ const CYCLES = 3;
 export default class GameStage extends Phaser.Scene {
     constructor() {
         super('Game');
-        this.level = 1;
     }
 
     init() {
         this.cursors = this.input.keyboard.createCursorKeys();
+        if(this.sys.game.config.level === 3) {
+            this.sys.game.config.level = 1;
+            this.level = 1
+        }
+        this.level = this.sys.game.config.level;
     }
     preload() {
         this.add.sprite(0, 0, 'imgBG').setOrigin(0);
+        this.theme = this.sound.add('theme');
     }
     create() {
+        if (!this.sys.game.config.mute) {
+            this.theme.play({
+                volume: 0.1
+            });
+        } else {
+            this.theme.stop();
+        }
         this.map = new GameMap(this, this.level);
         this.player = new Player(this, this.map);
         this.stats = new Stats(this, CYCLES);
@@ -34,21 +46,41 @@ export default class GameStage extends Phaser.Scene {
             if (player.gameObject === this.player.car && oil.gameObject.frame.name === 'oil') {
                 this.player.slip();
             }
-            // if (player.gameObject === this.player.car && oil.gameObject.frame.name === 'topdownTile_41') {
-            //     this.sound.add('bom').play({
-            //         volume: 0.1
-            //     });
-                
-            // }
-        })
+        });
+        this.addButton();
+        this.addEvents();
     }
     onCycleComplete() {
         this.stats.onCycleComplete();
         if (this.stats.complete) {
-            this.level++;
+            this.theme.stop();
+            this.sys.game.config.level = ++this.level;
             this.statsPopup = new StatsPopup(this, this.stats, this.level);
         }
     }
+    addButton() {
+        this.menu = this.add.text(100,
+            850, 
+            'MENU',
+            {
+                font: 'bold 55px CurseCasual',
+                fill: '#ffffff',
+            });
+        this.menu.setStroke('#003333', 16);
+        this.menu.setOrigin(0.5);
+        this.menu.setInteractive();
+    }
+
+    goToMenu() {
+        this.theme.stop();
+        this.sys.game.config.mute = false;
+        this.scene.start('Start');
+    }
+
+    addEvents() {
+        this.menu.on('pointerdown', this.goToMenu, this);
+    }
+
     update(time, deltaTime) {
         this.stats.update(deltaTime)
         this.statsView.render();

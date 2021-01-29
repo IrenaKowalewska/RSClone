@@ -9,7 +9,6 @@ import objectsJson from '../assets/objectsAll.json';
 export default class PreloaderStage extends Phaser.Scene {
     constructor() {
         super('Preloader');
-        console.log(this.level)
     }
     preload() {
         this.add.sprite(0, 0, 'imgBG').setOrigin(0);
