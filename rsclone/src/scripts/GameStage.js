@@ -50,6 +50,11 @@ export default class GameStage extends Phaser.Scene {
 
         if (this.client){
             this.enemy = new Player(this,this.map, car.enemy);
+            this.client.on('data', data => {
+                this.enemy.car.setX(data.x);
+                this.enemy.car.setY(data.y);
+                this.enemy.car.setAngle(data.angle);
+            });
         };
 
         this.stats = new Stats(this, CYCLES);
@@ -72,9 +77,19 @@ export default class GameStage extends Phaser.Scene {
             this.scene.restart();
         }
     }
+    sync(){
+      if(this.client){
+          this.client.send({
+              x: this.player.car.x,
+              y: this.player.car.y,
+              angle: this.player.car.angle,
+          })
+      }  
+    }
     update(time, deltaTime) {
         this.stats.update(deltaTime)
         this.statsView.render();
         this.player.move();
+        this.sync();
     }
 }
