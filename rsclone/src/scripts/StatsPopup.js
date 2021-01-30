@@ -62,6 +62,7 @@ export default class StatsPopup {
             this.scene.scene.start('Game');
         });
         this.menu.on('pointerdown', () => {
+            this.scene.sys.game.config.mute = !this.scene.sys.game.config.mute;
             this.scene.scene.start('Start'); 
         });
     }

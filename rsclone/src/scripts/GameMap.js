@@ -23,7 +23,6 @@ export default class GameMap {
     create() {
         this.addLayers();
         this.addObjects();
-        this.addOils();
         this.addArrows();
         this.addSnowRoad();
         this.addCheckpoints();
@@ -51,13 +50,6 @@ export default class GameMap {
         });
     }
 
-    addOils() {
-        this.tileMap.findObject('oil', item => {
-            const objectSprite = this.scene.matter.add.sprite(item.x + item.width / 2, item.y - item.height / 2, 'gameObjects', item.name);
-            objectSprite.setStatic(true);
-            objectSprite.setSensor(true);
-        });
-    }
     addArrows() {
         this.tileMap.findObject('arrows', item => {
             const objectSprite = this.scene.matter.add.sprite(item.x + item.width / 2, item.y - item.height / 2, 'gameObjects', item.name);

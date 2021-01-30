@@ -4,17 +4,20 @@ export default class StartStage extends Phaser.Scene {
     constructor() {
         super('Start');
         this.level = 1;
+        // this.mute = false;
     }
     preload() {
         this.start = this.sound.add('start');
     }
     create() {
+        this.mute = this.sys.game.config.mute || false;
         this.addBG();
         this.addGameTitle();
         this.addButtons();
         this.addEvents();
         this.changeMute();
         this.sys.game.config.level = this.level;
+      
     }
     addBG() {
         this.add.sprite(0, 0, 'imgBG').setOrigin(0).setAlpha(0.9);
@@ -71,20 +74,19 @@ export default class StartStage extends Phaser.Scene {
     }
     changeMute() {
         if(this.sys.game.config.mute) {
-            this.mute = false;
-            this.sys.game.config.mute = this.mute;
             this.buttonMute.setText('SOUND OFF');
             this.start.play({
                 volume: 0.1
             });
-            this.mute = false;
-        } else {
             this.sys.game.config.mute = !this.mute;
+            this.mute = !this.mute;
+        } else {
             this.buttonMute.setText('SOUND ON');
             this.start.stop();
+            this.sys.game.config.mute = !this.mute;
             this.mute = !this.mute;
         }
-        
+        console.log(this.sys.game.config.mute)
     }
     startGame() {
         this.scene.start('Level');
