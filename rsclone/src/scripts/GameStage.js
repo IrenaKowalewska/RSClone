@@ -42,11 +42,6 @@ export default class GameStage extends Phaser.Scene {
 
         this.player.car.on('cycle', this.onCycleComplete, this)
 
-        this.matter.world.on('collisionactive', (event, oil, player) => {
-            if (player.gameObject === this.player.car && oil.gameObject.frame.name === 'oil') {
-                this.player.slip();
-            }
-        });
         this.addButton();
         this.addEvents();
     }
@@ -72,8 +67,8 @@ export default class GameStage extends Phaser.Scene {
     }
 
     goToMenu() {
+        this.sys.game.config.mute = !this.sys.game.config.mute;
         this.theme.stop();
-        this.sys.game.config.mute = false;
         this.scene.start('Start');
     }
 
