@@ -4,7 +4,6 @@ export default class StartStage extends Phaser.Scene {
     constructor() {
         super('Start');
         this.level = 1;
-        // this.mute = false;
     }
     preload() {
         this.start = this.sound.add('start');
@@ -20,18 +19,34 @@ export default class StartStage extends Phaser.Scene {
       
     }
     addBG() {
-        this.add.sprite(0, 0, 'imgBG').setOrigin(0).setAlpha(0.9);
+        const bg = this.add.sprite(0, 0, 'imgBG').setOrigin(0).setAlpha(0);
+        this.tweens.add({
+            targets: bg,
+            alphaTopLeft: { value: 1, duration: 10000, ease: 'Power1' },
+            alphaBottomRight: { value: 1, duration: 15000, ease: 'Power1' },
+            alphaBottomLeft: { value: 1, duration: 10000, ease: 'Power1', delay: 10000 },
+            yoyo: true,
+            loop: -1
+
+        });
     }
     addGameTitle() {
         this.gameTitle = this.add.text(this.cameras.main.centerX,
             this.cameras.main.centerY - 200, 
             `REAL NEW YEAR'S DAY RACING`,
             {
-                font: 'bold 60px CurseCasual',
+                font: 'bold 80px CurseCasual',
                 fill: '#ffffff',
             });
-        this.gameTitle.setStroke('#003333', 16);
+        this.gameTitle.setStroke('#003333', 8);
         this.gameTitle.setOrigin(0.5);
+        this.gradient = this.gameTitle.context.createLinearGradient(0, 0, 0, this.gameTitle.height);
+        this.gradient.addColorStop(0, '#003333');
+        this.gradient.addColorStop(.5, '#ffffff');
+        this.gradient.addColorStop(.5, '#aaaaaa');
+        this.gradient.addColorStop(1, '#003333');
+    
+        this.gameTitle.setFill(this.gradient);
     }
     addButtons() {
         this.buttonOnePlayer = this.add.text(this.cameras.main.centerX,
@@ -40,7 +55,9 @@ export default class StartStage extends Phaser.Scene {
             {
                 font: 'bold 55px CurseCasual',
                 fill: '#ffffff',
+                backgroundColor: '#ffffff',
             });
+        this.buttonOnePlayer.setPadding(27, 5);
         this.buttonOnePlayer.setStroke('#003333', 16);
         this.buttonOnePlayer.setOrigin(0.5);
         this.buttonOnePlayer.setInteractive();
@@ -51,7 +68,9 @@ export default class StartStage extends Phaser.Scene {
             {
                 font: 'bold 55px CurseCasual',
                 fill: '#ffffff',
+                backgroundColor: '#ffffff'
             });
+        this.buttonTwoPlayers.setPadding(5);
         this.buttonTwoPlayers.setStroke('#003333', 16);
         this.buttonTwoPlayers.setOrigin(0.5);
         this.buttonTwoPlayers.setInteractive();
@@ -62,7 +81,9 @@ export default class StartStage extends Phaser.Scene {
             {
                 font: 'bold 45px CurseCasual',
                 fill: '#ffffff',
+                backgroundColor: "#ffffff"
             });
+        this.buttonMute.setPadding(30, 5)
         this.buttonMute.setStroke('#003333', 16);
         this.buttonMute.setOrigin(0.5);
         this.buttonMute.setInteractive();
@@ -86,7 +107,6 @@ export default class StartStage extends Phaser.Scene {
             this.sys.game.config.mute = !this.mute;
             this.mute = !this.mute;
         }
-        console.log(this.sys.game.config.mute)
     }
     startGame() {
         this.scene.start('Level');
