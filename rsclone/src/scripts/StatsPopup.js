@@ -58,11 +58,26 @@ export default class StatsPopup {
             .setScrollFactor(0)
             .setInteractive();
 
+        if (this.scene.sys.game.config.language) {
+            this.title.setText('Уровень пройден');
+            this.time.setText(`Общее время: ${this.stats.time.toFixed(2)}`);
+            this.timeBest.setText(`Лучшее время за круг: ${this.stats.timeBestCycle.toFixed(2)}`);
+            this.continue.setText(`ПРОДОЛЖИТЬ`);
+            this.menu.setText(`МЕНЮ`);
+        } else {
+            this.title.setText('Level complete');
+            this.time.setText(`Time total: ${this.stats.time.toFixed(2)}`);
+            this.timeBest.setText(`Time Best: ${this.stats.timeBestCycle.toFixed(2)}`);
+            this.continue.setText(`CONTINUE`);
+            this.menu.setText(`MENU`);
+        }
+
         this.continue.on('pointerdown', () => {
             this.scene.scene.start('Game');
         });
         this.menu.on('pointerdown', () => {
             this.scene.sys.game.config.mute = !this.scene.sys.game.config.mute;
+            this.scene.sys.game.config.language = !this.scene.sys.game.config.language;
             this.scene.scene.start('Start'); 
         });
     }
