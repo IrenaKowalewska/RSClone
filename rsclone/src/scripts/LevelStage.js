@@ -22,11 +22,16 @@ export default class LevelStage extends Phaser.Scene {
             this.cameras.main.centerY - 200, 
             `CHOOSE A TRACK`,
             {
-                font: 'bold 60px CurseCasual',
+                font: 'bold 60px monospace',
                 fill: '#ffffff',
             });
         this.gameTitle.setStroke('#003333', 16);
         this.gameTitle.setOrigin(0.5);
+        if (this.sys.game.config.language) {
+            this.gameTitle.setText('ВЫБЕРИТЕ ТРАССУ');
+        } else {
+            this.gameTitle.setText('CHOOSE A TRACK');
+        }
     }
     addButtons() {
         this.buttonOneTrack = this.add.text(this.cameras.main.centerX,

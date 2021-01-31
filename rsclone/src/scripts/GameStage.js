@@ -58,16 +58,22 @@ export default class GameStage extends Phaser.Scene {
             850, 
             'MENU',
             {
-                font: 'bold 55px CurseCasual',
+                font: 'bold 55px monospace',
                 fill: '#ffffff',
             });
         this.menu.setStroke('#003333', 16);
         this.menu.setOrigin(0.5);
         this.menu.setInteractive();
+        if (this.sys.game.config.language) {
+            this.menu.setText('МЕНЮ');
+        } else {
+            this.menu.setText('MENU');
+        }
     }
 
     goToMenu() {
         this.sys.game.config.mute = !this.sys.game.config.mute;
+        this.sys.game.config.language = !this.sys.game.config.language;
         this.theme.stop();
         this.scene.start('Start');
     }

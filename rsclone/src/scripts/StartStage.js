@@ -10,13 +10,14 @@ export default class StartStage extends Phaser.Scene {
     }
     create() {
         this.mute = this.sys.game.config.mute || false;
+        this.isEnglish = this.sys.game.config.language ? true : false;
         this.addBG();
         this.addGameTitle();
         this.addButtons();
         this.addEvents();
+        this.changeLanguage();
         this.changeMute();
         this.sys.game.config.level = this.level;
-      
     }
     addBG() {
         const bg = this.add.sprite(0, 0, 'imgBG').setOrigin(0).setAlpha(0);
@@ -51,26 +52,22 @@ export default class StartStage extends Phaser.Scene {
     addButtons() {
         this.buttonOnePlayer = this.add.text(this.cameras.main.centerX,
             this.cameras.main.centerY - 50, 
-            'ONE PLAYER',
+            '',
             {
-                font: 'bold 55px CurseCasual',
+                font: 'bold 55px monospace',
                 fill: '#ffffff',
-                backgroundColor: '#ffffff',
             });
-        this.buttonOnePlayer.setPadding(27, 5);
         this.buttonOnePlayer.setStroke('#003333', 16);
         this.buttonOnePlayer.setOrigin(0.5);
         this.buttonOnePlayer.setInteractive();
 
         this.buttonTwoPlayers = this.add.text(this.cameras.main.centerX,
             this.cameras.main.centerY + 50, 
-            'TWO PLAYERS',
+            '',
             {
-                font: 'bold 55px CurseCasual',
+                font: 'bold 55px monospace',
                 fill: '#ffffff',
-                backgroundColor: '#ffffff'
             });
-        this.buttonTwoPlayers.setPadding(5);
         this.buttonTwoPlayers.setStroke('#003333', 16);
         this.buttonTwoPlayers.setOrigin(0.5);
         this.buttonTwoPlayers.setInteractive();
@@ -79,30 +76,74 @@ export default class StartStage extends Phaser.Scene {
             this.cameras.main.centerY + 150, 
                 ``,
             {
-                font: 'bold 45px CurseCasual',
+                font: 'bold 45px monospace',
                 fill: '#ffffff',
-                backgroundColor: "#ffffff"
             });
-        this.buttonMute.setPadding(30, 5)
-        this.buttonMute.setStroke('#003333', 16);
+        this.buttonMute.setStroke('#003333', 10);
         this.buttonMute.setOrigin(0.5);
         this.buttonMute.setInteractive();
+        this.buttonLanguage = this.add.text(this.cameras.main.centerX,
+            this.cameras.main.centerY + 240, 
+                ``,
+            {
+                font: 'bold 45px monospace',
+                fill: '#ffffff',
+            });
+        this.buttonLanguage.setStroke('#003333', 10);
+        this.buttonLanguage.setOrigin(0.5);
+        this.buttonLanguage.setInteractive();
     }
     addEvents() {
         this.buttonMute.on('pointerdown', this.changeMute, this);
+        this.buttonLanguage.on('pointerdown', this.changeLanguage, this);
         this.buttonOnePlayer.on('pointerdown', this.startGame, this);
         this.buttonTwoPlayers.on('pointerdown', this.requestGame, this);
     }
+    changeLanguage() {
+        if(this.sys.game.config.language || this.isEnglish) {
+            this.buttonLanguage.setText('LANGUAGE: EN');
+            this.buttonOnePlayer.setText('ONE PLAYER');
+            this.buttonTwoPlayers.setText('TWO PLAYERS');
+            if (!this.sys.game.config.mute) {
+                this.buttonMute.setText('SOUND OFF');
+            } else {
+                this.buttonMute.setText('SOUND ON');
+            }
+            this.sys.game.config.language = !this.isEnglish;
+            this.isEnglish = !this.isEnglish;
+            
+        } else {
+            this.buttonLanguage.setText('ЯЗЫК: RU');
+            this.buttonOnePlayer.setText('ОДИН ИГРОК');
+            this.buttonTwoPlayers.setText('ДВА ИГРОКА');
+            if (this.sys.game.config.mute) {
+                this.buttonMute.setText('ВКЛ. ЗВУК');
+            } 
+            if(!this.sys.game.config.mute) {
+                this.buttonMute.setText('ВЫКЛ. ЗВУК');
+            }
+            this.sys.game.config.language = !this.isEnglish;
+            this.isEnglish = !this.isEnglish;
+        }
+    }
     changeMute() {
         if(this.sys.game.config.mute) {
-            this.buttonMute.setText('SOUND OFF');
+            if(!this.sys.game.config.language || !this.isEnglish) {
+                this.buttonMute.setText('SOUND OFF');
+            } else {
+                this.buttonMute.setText('ВЫКЛ. ЗВУК');
+            }
             this.start.play({
                 volume: 0.1
             });
             this.sys.game.config.mute = !this.mute;
             this.mute = !this.mute;
         } else {
-            this.buttonMute.setText('SOUND ON');
+            if(!this.sys.game.config.language || !this.isEnglish) {
+                this.buttonMute.setText('SOUND ON');
+            } else {
+                this.buttonMute.setText('ВКЛ. ЗВУК');
+            }
             this.start.stop();
             this.sys.game.config.mute = !this.mute;
             this.mute = !this.mute;
