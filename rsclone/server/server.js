@@ -2,7 +2,9 @@
 const http = require('http');
 const path = require('path');
 const express = require('express');
-const sockets = require('./sockets');
+// const { Http2ServerRequest } = require('http2');
+const socketIO = require('socket.io');
+// const { Socket } = require('dgram');
 
 //создаем сервер
 const distPath = './../dist'
@@ -14,9 +16,14 @@ const server = http.createServer(app);
 const gamePath = path.join(__dirname,distPath);
 const static = express.static(gamePath);
 app.use(static);
-sockets.init(server);
+
 //запуск  сервера
 server.listen(PORT,() => {
     console.log(`Сервер запущен на порте ${PORT}`);
 });
 
+const io = socketIO(server);
+io.on('connection',(socket)=>{
+    socket.emit('gameStart')
+    console.log(`Подключился новый игрок ${socket.id}`)
+})

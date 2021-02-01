@@ -64,9 +64,9 @@ export default class GameMap {
             objectSprite.setSensor(true);
         });
     }
-    getPlayerPosition(positionName) {
-        return this.tileMap.findObject(positionName, position => {
-            return position.name === positionName;
+    getPlayerPosition() {
+        return this.tileMap.findObject('player', position => {
+            return position.name ==='player';
         });
     }
     getLayerFriction(car) {
