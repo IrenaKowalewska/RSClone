@@ -5,22 +5,28 @@ const LAYERS_FRICTION = {
     ice: 0.3
 }
 export default class GameMap {
-    constructor(scene) {
+    constructor(scene, level = 1) {
+        this.level = level;
         this.scene = scene;
         this.init();
         this.create();
     }
     init() {
-        this.tileMap = this.scene.make.tilemap({key: 'tileMap'});
+        if(this.level === 1) {
+            this.tileMap = this.scene.make.tilemap({key: 'tileMap'});
+        }
+        if(this.level === 2) {
+            this.tileMap = this.scene.make.tilemap({key: 'tileMap2'});
+        }
         this.tileSet =  this.tileMap.addTilesetImage('tileset', 'tileSet', 64, 64, 0, 1);
     }
     create() {
         this.addLayers();
         this.addObjects();
-        this.addOils();
         this.addArrows();
         this.addSnowRoad();
         this.addCheckpoints();
+
     }
     addLayers() {
         this.tileMap.createLayer('snow', this.tileSet);
@@ -44,13 +50,6 @@ export default class GameMap {
         });
     }
 
-    addOils() {
-        this.tileMap.findObject('oil', item => {
-            const objectSprite = this.scene.matter.add.sprite(item.x + item.width / 2, item.y - item.height / 2, 'gameObjects', item.name);
-            objectSprite.setStatic(true);
-            objectSprite.setSensor(true);
-        });
-    }
     addArrows() {
         this.tileMap.findObject('arrows', item => {
             const objectSprite = this.scene.matter.add.sprite(item.x + item.width / 2, item.y - item.height / 2, 'gameObjects', item.name);

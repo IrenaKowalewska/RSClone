@@ -2,7 +2,6 @@ const DIRECTIONS = Object.freeze({BACK: -1, NONE: 0, FORWARD: 1});
 const TURNS = Object.freeze({LEFT: -1, NONE: 0, RIGHT: 1});
 const SPEED = 10;
 const ACCELERATION = 0.5;
-const SLIP_ANGLE = 4;
 export default class Player {
     constructor(scene, map, config) {
         this.scene = scene;
@@ -61,13 +60,6 @@ export default class Player {
 
     getGameSpeedCar() {
         return SPEED * this.map.getLayerFriction(this.car);
-    }
-
-    slip() {
-        this.car.angle += SLIP_ANGLE;
-        this.scene.sound.add('slip').play({
-                volume: 0.3
-            })
     }
 
     move() {

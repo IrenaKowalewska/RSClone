@@ -14,9 +14,16 @@ export default class StatsView {
     }
 
     render() {
-        this.cycles.setText(`Cycles: ${this.stats.cycle}/${this.stats.cycles}`);
-        this.time.setText(`Time: ${this.stats.time.toFixed(2)}`);
-        this.timeCycle.setText(`Time cycle: ${this.stats.timeCycle.toFixed(2)}`);
-        this.timeBestCycle.setText(`Best Cycle: ${this.stats.timeBestCycle.toFixed(2)}`);
+        if(this.scene.sys.game.config.language) {
+            this.cycles.setText(`Круги: ${this.stats.cycle}/${this.stats.cycles}`);
+            this.time.setText(`Время: ${this.stats.time.toFixed(2)}`);
+            this.timeCycle.setText(`Время текущего круга: ${this.stats.timeCycle.toFixed(2)}`);
+            this.timeBestCycle .setText(`Лучшее время: ${this.stats.timeBestCycle.toFixed(2)}`);
+        } else {
+            this.cycles.setText(`Cycles: ${this.stats.cycle}/${this.stats.cycles}`);
+            this.time.setText(`Time: ${this.stats.time.toFixed(2)}`);
+            this.timeCycle.setText(`Time cycle: ${this.stats.timeCycle.toFixed(2)}`);
+            this.timeBestCycle.setText(`Best Cycle: ${this.stats.timeBestCycle.toFixed(2)}`);
+        }
     }
 }
