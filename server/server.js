@@ -6,7 +6,7 @@ const sockets = require('./sockets');
 
 //создаем сервер
 const distPath = './../dist'
-const PORT = 3000;
+const PORT = process.env.PORT || 80;
 const app = express();
 const server = http.createServer(app);
 
