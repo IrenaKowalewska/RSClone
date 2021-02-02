@@ -2,10 +2,10 @@
 const http = require('http');
 const path = require('path');
 const express = require('express');
-const sockets = require('./sockets');
+const sockets = require('./server/sockets');
 
 //создаем сервер
-const distPath = './../dist'
+const distPath = './dist'
 const PORT = process.env.PORT || 80;
 const app = express();
 const server = http.createServer(app);
