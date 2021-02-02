@@ -150,7 +150,11 @@ export default class StartStage extends Phaser.Scene {
         }
     }
     startGame() {
-        this.scene.start('Level');
+
+        this.scene.start('Game',{client: this.client});
+        this.theme.play({
+            volume: 0.1
+        });
         this.start.stop();
     }
     requestGame() {
