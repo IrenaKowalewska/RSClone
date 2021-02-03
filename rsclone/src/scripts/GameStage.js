@@ -6,13 +6,26 @@ import StatsView from './StatsView';
 import StatsPopup from './StatsPopup';
 
 const CYCLES = 3;
+const CARS = {
+    BLACK:{
+        sprite: 'car_black_small_1',
+        position: 'player',
+    },
+    RED:{
+        sprite: 'car_red_small_1',
+        position: 'enemy',
+    }
+};
 
 export default class GameStage extends Phaser.Scene {
     constructor() {
         super('Game');
     }
+    init(data) {
+        if(data.client){
+            this.client = data.client;
+        };
 
-    init() {
         this.cursors = this.input.keyboard.createCursorKeys();
         if(this.sys.game.config.level === 3) {
             this.sys.game.config.level = 1;
@@ -24,7 +37,35 @@ export default class GameStage extends Phaser.Scene {
         this.add.sprite(0, 0, 'imgBG').setOrigin(0);
         this.theme = this.sound.add('theme');
     }
+    getCarsConfig(){
+        let config = {
+            player:CARS.BLACK,
+            enemy:CARS.RED,
+        }
+        if (this.client && !this.client.master){
+            config = {
+                player:CARS.RED,
+                enemy:CARS.BLACK,  
+            }
+        }
+        return config
+    }
     create() {
+
+        this.map = new GameMap(this, this.level);
+        const car = this.getCarsConfig();
+
+        this.player = new Player(this, this.map , car.player);
+
+        if (this.client){
+            this.enemy = new Player(this,this.map, car.enemy);
+            this.client.on('data', data => {
+                this.enemy.car.setX(data.x);
+                this.enemy.car.setY(data.y);
+                this.enemy.car.setAngle(data.angle);
+            });
+        };
+
         if (!this.sys.game.config.mute) {
             this.theme.play({
                 volume: 0.1
@@ -32,8 +73,7 @@ export default class GameStage extends Phaser.Scene {
         } else {
             this.theme.stop();
         }
-        this.map = new GameMap(this, this.level);
-        this.player = new Player(this, this.map);
+   
         this.stats = new Stats(this, CYCLES);
         this.statsView = new StatsView(this, this.stats);
 
@@ -71,6 +111,17 @@ export default class GameStage extends Phaser.Scene {
         }
     }
 
+    sync(){
+      if(this.client){
+          this.client.send({
+              x: this.player.car.x,
+              y: this.player.car.y,
+              angle: this.player.car.angle,
+          })
+      }  
+    }
+
+
     goToMenu() {
         this.sys.game.config.mute = !this.sys.game.config.mute;
         this.sys.game.config.language = !this.sys.game.config.language;
@@ -86,5 +137,6 @@ export default class GameStage extends Phaser.Scene {
         this.stats.update(deltaTime)
         this.statsView.render();
         this.player.move();
+        this.sync();
     }
 }
